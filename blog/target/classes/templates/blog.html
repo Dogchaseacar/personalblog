@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog detail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/format.css">
+</head>
+<body>
+    <!--navi part-->
+    <nav class="ui attached inverted segment m-padded-tb-mini">
+        <div class="ui container">
+            <div class="ui inverted stackable menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+<!--                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>-->
+                <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search...">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!--page content-->
+    <div class="m-container-small m-padded-tb-mid">
+        <div class="ui container">
+            <div class="ui top attached segment">
+                <div class="ui horizontal link list">
+                    <div class="item">
+                        <img src="https://picsum.photos/id/1006/100/100" th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image">
+                        <div class="content">
+                            <a href="#" class="header" th:text="${blog.user.nickname}">wdy</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i class="calendar icon"></i> <span th:text="${#dates.format(blog.createTime,'yyyy-MM-dd')}">2019-9-1</span>
+                    </div>
+                    <div>
+                        <i class="eye icon"></i> <span th:text="${blog.views}">232</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ui attached segment">
+                <!--图片区域-->
+                <img src="https://picsum.photos/id/1/800/450" th:src="@{${blog.firstPicture}}" alt="" class="ui rounded image">
+            </div>
+            <div class="ui attached padded segment">
+                <!--文字区域-->
+                <div class="ui right aligned basic segment">
+                    <div class="ui orange basic label" th:text="${blog.flag}">原创</div>
+                </div>
+                <h2 class="ui center aligned header" th:text="${blog.title}">读清史小记</h2>
+                <br>
+                <!--文章内容-->
+                <div id="content" class="m-padded-lr-responsive m-padded-tb-mid" th:utext="${blog.content}">
+                    <div class="rich_media_content " id="js_content" style="visibility: visible;">
+                        <section style="text-align: justify;margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">越学习越觉得自己无知，需要去学习更多的东西。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">一直对历史上的故事饶有兴致，今日听人讲到一个观点：</span><span style="font-size: 15px;">历史不能称之为科学，因为任何人都无法去对历史进行重复检验，无法穿越回过去。</span><span style="font-size: 15px;">那我们学习历史的意义何在？</span><span style="font-size: 15px;">历史究竟能为我们带来些什么？</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">他给出的答案：</span><span style="font-size: 15px;">读历史要结合现实，看现实要结合历史。历史要读出现实感。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">如果我们能够在读历史时，意识到这件事放在今天，它也在重演着。同样我们在见证当今的经历时，我们会觉得这件事在历史上是似曾相识。&nbsp;我们需要的是历史的合理性和它的实用价值，而不是去陷入学究的无意义的争论。那么</span><span style="font-size: 15px;">这样，或许历史即使不是科学，也能被赋予一定的意义了。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">停留在纸面上的历史多多少少会带有作者的主观色彩，即使是被咱们推崇为正史的史记汉书等也不例外。</span><span style="font-size: 15px;">我们在读历史的时候务必要加入自己的思考，最好能结合多方的资料要把纸面上所说的和现实结合起来推演一下。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"></span></section><section style="margin-left: 0px;margin-right: 0px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">当然结合现实也不能停留在纸面上，要去丰富自己的经历，当然更有条件的可以去实地考察，地理能够给我们更多的答案，地理是历史发生的舞台，数千年的时间并没有让地质变化太多。我们需要丰富的实践，把它和历史结合起来才能更好地帮助我们去思考它的合理性吗，再利用历史帮助我们去思考。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">这里举一个清史的小故事，是关于征税的，可以结合现实分析分析，古时中国历代就有人丁税，征税对象是16-60岁没有残疾的成年男子，按照每户的人口数目进行征税，这样有一个问题，就是人口是流动的带有隐私的，尤其是拥有大量土地的富绅官宦，在私人的土地上，他们的人丁数是很难查明的。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">雍正年间山西布政使高成龄<strong>【1】</strong>在奏折中说：</span><span style="font-size: 15px;">“</span><span style="font-size: 15px;color: rgb(136, 136, 136);">富者田连阡陌，竟少丁差，贫民地无立锥，反多徭役</span><span style="font-size: 15px;">”。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">意思是说富人有大量的土地和收入，登记的人口数却少的可怜，穷人没有什么地却被要交的高额赋税拖累。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"></span><span style="font-size: 15px;">这是因为【<strong>2】</strong>“</span><span style="font-size: 15px;color: rgb(136, 136, 136);">豪强尽行花诡，得逃上则；下户穷民置数十亩之地，从实开报，反蒙升户</span><span style="font-size: 15px;">”，</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">人口是流动的，不透明的，可能今天在这明天又跑到别的地方，统计起来难度甚大。</span><span style="font-size: 15px;">不像土地，就一直在那可以直接统计和测量。</span><span style="font-size: 15px;">这样就给了钻空子的机会，比如富人和有势的人可以去给差人送点钱，或者搞点<strong>阴阳人口数</strong>。</span><span style="font-size: 15px;">或者把人丁挂靠到自己家里的佃户。</span><span style="font-size: 15px;">大家族里50多口人，登记成10口。</span><span style="font-size: 15px;">林林总总花样繁多，这里就不一一列举了。<span style="font-size: 15px;">但是穷</span><span style="font-size: 15px;">人并没有这样的途径和机会的。</span><span style="font-size: 15px;"></span></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><span style="font-size: 15px;"><br></span></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;color: rgb(136, 136, 136);">就如同现在没有自己的公司，自己的团队，没有各种合同的，在公司拿薪水的职员是没有避税逃税的方法的。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"></span><span style="font-size: 15px;">然而国家的开支是摆在那里的，不会说因为阴阳人口数目而减少，不会说富人漏的税，那这开支也没有了，公务员和军队的开支不会因为避税而减少，那么最后这些开支还是得没有条件避税的下层百姓来承担，受“代纳”和“包赔”之苦。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"></span><span style="font-size: 15px;">康熙初年任直隶灵寿知县的陆陇其【<strong>3</strong>】写到“</span><span style="font-size: 15px;color: rgb(136, 136, 136);">每遇编审，有司务博户口加增之名，不顾民之疾痛，必求溢于前额，故应删者不删，不应增者而增，甚则人已亡而不肯开除，子初生而责其登籍，沟中之瘠犹是册上之丁，黄口之儿已是追呼之檄，始而包赔，既而逃亡，势所必然</span><span style="font-size: 15px;">”</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">到了什么地步呢，当地的官吏为了来补齐富人避税带来的亏空，对底层的百姓家中的人口数想尽办法压榨，人丁数不该增加的使劲增加，该删除的不去删除。</span><span style="font-size: 15px;">一出生的孩子就被要求登记上名字。</span><span style="font-size: 15px;">死亡了的却不去删除。</span><span style="font-size: 15px;">当然了压榨的手段是多种多样的，可能是打也可能是骗。</span><span style="font-size: 15px;">但不管如何，这样肯定不是长久之计。</span><span style="font-size: 15px;">百姓会生活的很差，不堪其扰，逃亡是必然的。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">这样一来“</span><span style="font-size: 15px;color: rgb(136, 136, 136);">其间家无寸土，糊口不足，叫号吁天者，皆册（名册）中所载中等户则也。</span><span style="font-size: 15px;">”&nbsp;没有土地的穷人越来越难。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">一直到了雍正元年（1723年）九月，出现了一个叫李维钧的这么一个人，他是直隶总督，他奏请雍正皇帝将丁银摊入地税征收，他这个人对人性是由考究的，在奏请前他就意料到了这一建议必将遭到富裕官僚阶层及只愿意按规矩行事的户部的反对。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">富裕官僚阶层反对很好理解，这个政策会堵死他们肥己营私的门路。</span><span style="font-size: 15px;">但其实户部反对也不难理解，因为一旦制定了政策，就得户部（相当于现在的民政部财政部）去执行，那太得罪权贵，户部的人可不愿意干。</span><span style="font-size: 15px;">&nbsp;他综合对这两大强大利益集团考虑，&nbsp;因此他希望雍正皇帝能够直接拍板。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">但是呢，雍正皇帝还是民主了一把，还是将李维钧的建议发给了九卿会议讨论， 结果呢，果然不出所料，众大臣【<strong>4</strong>】“</span><span style="font-size: 15px;color: rgb(136, 136, 136);">并不据理祥议，依违瞻顾，皆有迎合上意起见”；</span><span style="font-size: 15px;color: rgb(136, 136, 136);">“及至会议，彼此推诿，不发一言。或假寐闲谈， 迟延累日</span><span style="font-size: 15px;">”， 推举几个新上任的下级官员随便说几句， “</span><span style="font-size: 15px;color: rgb(136, 136, 136);">便群相附和，以图塞责</span><span style="font-size: 15px;">”， 而且很多人直接不来参加会议。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">从这里九卿和户部的行为，是不是也觉得古人和现代人在这些事情的反应和处理也并没有太大的区别。</span><span style="font-size: 15px;">人在利益团体中行为的相似性。</span><span style="font-size: 15px;">甚至说这里连采取的方法和现代人都是差不多的。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">那么可想而知如果雍正再继续发扬民主，那最终富人逃的税由底层人民来承担，越来越庞大的负担给到底层民众，百姓将会苦不堪言，这是是极不利于社会稳定的。</span><span style="font-size: 15px;">雍正皇帝深知此道。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">雍正本人也是熟读儒家经典，知道要孔孟以民为本的思想，民为重君为轻。</span><span style="font-size: 15px;">普天之下大多是百姓，是底层，他们过的不顺，一旦聚集起来暴乱是极其危险的。</span><span style="font-size: 15px;">最终他还是力排众议，在全国强制推行摊丁入亩的制度。</span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;"><br></span></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">把固定下来的丁税平均摊入田赋中，征收统一的地丁银，不再以人为对象征收丁税。</span><span style="font-size: 15px;">摊丁入亩，<strong>按地亩之多少，定纳税之数目。</strong></span><strong><span style="font-size: 15px;">地多者多纳，地少者少纳，无地者不纳</span></strong><span style="font-size: 15px;">。</span><span style="font-size: 15px;">这项措施有利于贫民而打击了中饱私囊的官员地主。</span><span style="font-size: 15px;">在一定程度上增强了社会的稳定性，松弛了人民对封建国家的人身依附关系，增加了社会流动性。</span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">其实这里也可以看出，并没有十全十美的政策，一昧的推行民主的香甜，并不能解决诸如此类的问题。</span><span style="font-size: 15px;">在这里，传统帝制的一个优越性就是一个高度集权皇帝可以不被任何利益集团束缚，去推行维护大多数人利益的政策。</span><span style="font-size: 15px;">当然这样，皇帝本人也会被放在一个相对危险的位置，因为一旦王朝灭亡，可能就会面临被灭族的危险。</span><span style="font-size: 15px;">崇祯和他儿子的死应该是让同年代的清朝统治者铭记在心的。</span><span style="font-size: 15px;">&nbsp;</span></section><p><br></p><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 15px;">写于2019年九月一日，文笔表达皆有不足，胡乱写了一些。</span><span style="font-size: 14px;"></span></section><section style="margin-left: 16px;margin-right: 16px;"><br></section><section style="margin-left: 0px;margin-right: 0px;"><span style="font-size: 20px;">参考文献</span></section><p><span style="font-size: 14px;text-align: left;">1.《朱批谕旨》 卷四十一至卷四十二 雍正二年</span><br></p><p style="margin-left: 0px;margin-right: 0px;text-align: left;"><span style="font-size: 14px;">2.陈嗣良：光绪《曹县志》卷三，《赋役志》</span></p><p style="margin-left: 0px;margin-right: 0px;text-align: left;"><span style="font-size: 14px;">3.陆陇其:《三鱼堂外集》卷1《编审人丁议》</span></p><p style="margin-left: 0px;margin-right: 0px;text-align: left;"><span style="font-size: 14px;">4.《清实录雍正朝实录》</span></p><p style="margin-left: 0px;margin-right: 0px;text-align: left;"><span style="font-size: 20px;"><br></span><br></p><p><br></p>
+                    </div>
+                </div>
+            </div>
+            <!--信息-->
+            <div class="ui middle aligned grid">
+                <div class="eleven wide column">
+                    <ui class="list">
+                        <li>作者： <span th:text="${blog.user.nickname}">wdy</span></li>
+                        <li>发表时间：<span th:text="${#dates.format(blog.createTime,'yyyy-MM-dd HH:mm')}">2019-9-01</span></li>
+                    </ui>
+                </div>
+            </div>
+            <!--留言-->
+            <div class="ui bottom attached segment">
+                <div id="comment-container" class="ui teal segment">
+                    <div th:fragment="commentList">
+                        <div class="ui threaded comments" style="max-width: 100%;">
+                            <h3 class="ui dividing header">Comments</h3>
+                            <div class="comment" th:each="comment : ${comments}">
+                                <a class="avatar">
+                                    <img src="/images/avatar/small/matt.jpg" th:src="@{${comment.avatar}}">
+                                </a>
+                                <div class="content">
+                                    <a class="author" th:text="${comment.nickname}">Matt</a>
+                                    <div class="metadata">
+                                        <span class="date" th:text="${#dates.format(comment.createTime,'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
+                                    </div>
+                                    <div class="text" th:text="${comment.content}">
+                                        How artistic!
+                                    </div>
+                                    <div class="actions">
+                                        <a class="reply" data-commentid="1" data-commentnickname="Matt" th:attr="data-commentid=${comment.id},data-commentnickname=${comment.nickname}" onclick="reply(this)">回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/*-->
+<!--                            <div class="comment">-->
+<!--                                <a class="avatar">-->
+<!--                                    <img src="/images/avatar/small/elliot.jpg">-->
+<!--                                </a>-->
+<!--                                <div class="content">-->
+<!--                                    <a class="author">Elliot Fu</a>-->
+<!--                                    <div class="metadata">-->
+<!--                                        <span class="date">Yesterday at 12:30AM</span>-->
+<!--                                    </div>-->
+<!--                                    <div class="text">-->
+<!--                                        <p>This has been very useful for my research. Thanks as well!</p>-->
+<!--                                    </div>-->
+<!--                                    <div class="actions">-->
+<!--                                        <a class="reply">回复</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="comments">-->
+<!--                                    <div class="comment">-->
+<!--                                        <a class="avatar">-->
+<!--                                            <img src="/images/avatar/small/jenny.jpg">-->
+<!--                                        </a>-->
+<!--                                        <div class="content">-->
+<!--                                            <a class="author">Jenny Hess</a>-->
+<!--                                            <div class="metadata">-->
+<!--                                                <span class="date">Just now</span>-->
+<!--                                            </div>-->
+<!--                                            <div class="text">-->
+<!--                                                Elliot you are always so right :)-->
+<!--                                            </div>-->
+<!--                                            <div class="actions">-->
+<!--                                                <a class="reply">回复</a>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="comment">-->
+<!--                                <a class="avatar">-->
+<!--                                    <img src="/images/avatar/small/joe.jpg">-->
+<!--                                </a>-->
+<!--                                <div class="content">-->
+<!--                                    <a class="author">Joe Henderson</a>-->
+<!--                                    <div class="metadata">-->
+<!--                                        <span class="date">5 days ago</span>-->
+<!--                                    </div>-->
+<!--                                    <div class="text">-->
+<!--                                        Dude, this is awesome. Thanks so much-->
+<!--                                    </div>-->
+<!--                                    <div class="actions">-->
+<!--                                        <a class="reply">回复</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                            <!--*/-->
+                            <div id ="comment-form" class="ui form">
+                                <input type="hidden" name="blog.id" th:value="${blog.id}">
+                                <input type="hidden" name="parentComment.id" value="-1">
+                                <div class="field">
+                                    <textarea name="content" placeholder="请输入评论内容..."></textarea>
+                                </div>
+                                <div class="fields">
+                                    <div class="field m-mobile-wide m-margin-bottom-small">
+                                        <div class="ui left icon input">
+                                            <i class="user icon"></i>
+                                            <input type="text" name="nickname" placeholder="姓名">
+                                        </div>
+                                    </div>
+                                    <div class="field m-mobile-wide m-margin-bottom-small">
+                                        <div class="ui left icon input ">
+                                            <i class="mail icon"></i>
+                                            <input type="text" name="email" placeholder="邮箱">
+                                        </div>
+                                    </div>
+                                    <div class="field m-mobile-wide m-margin-bottom-small">
+                                        <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide"><i class="edit icon"></i>评论</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-padded m-fixed m-right-bottom">
+        <div class="ui vertical icon buttons">
+            <a href="#" class="ui icon button"><i class="chevron up icon"></i>TOP</a>
+        </div>
+    </div>
+    <!--page footer-->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-big">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="five wide column">
+                    <img src="../static/images/foot1.jpg" class="ui rounded image" alt="" style="margin: 0 auto;width:200px">
+                </div>
+                <div class="five wide column">
+                    <h4 class="ui inverted header">Contact</h4>
+                    <p class="m-opacity-mini m-inline-block">Email: wdy75934@outlook.com</p>
+                </div>
+                <div class="six wide column">
+                    <h4 class="ui inverted header">wdy</h4>
+                    <p class="m-opacity-mini">一个胡诌乱侃的博客</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-spaced m-opacity-deep">Copyright © This bolg is designed by wdy.</p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $('.menu.toggle').click(function(){
+        $('.m-item ').toggleClass('m-mobile-hide');
+    });
+    $('.ui.form').form({
+        fields :{
+            title:{
+                identifier: 'content',
+                rules:[{
+                    type: 'empty',
+                    prompt:'请输入评论内容'
+                }]
+            },
+            content:{
+                identifier: 'nickname',
+                rules:[{
+                    type: 'empty',
+                    prompt:'请输入你的姓名'
+                }]
+            },
+            typeId:{
+                identifier: 'email',
+                rules:[{
+                    type: 'email',
+                    prompt:'请填写你的邮箱地址'
+                }]
+            }
+        },
+    });
+    $('#commentpost-btn').click(function(){
+       var boo=$('.ui.form').form('validate form');
+       if(boo) {
+           console.log('校验成功');
+           postData();
+       }else {
+           console.log('校验失败');
+       }
+    });
+
+    function postData() {
+        $("#comment-container").load(/*[[@{/comments}]]*/"",{
+            "parentComment.id" : $("[name='parentComment.id']").val(),
+            "blog.id" : $("[name='blog.id']").val(),
+            "nickname": $("[name='nickname']").val(),
+            "email"   : $("[name='email']").val(),
+            "content" : $("[name='content']").val()
+        },function (responseTxt, statusTxt, xhr) {
+            // $(window).scrollTo($('#comment-container'),500);
+            clearContent();
+        });
+    }
+
+    function clearContent() {
+        $("[name='content']").val('');
+        $("[name='parentComment.id']").val('-1');
+        $("[name='content']").attr("placeholder", "请输入评论信息...");
+    }
+
+    function reply(obj) {
+        var commentId = $(obj).data('commentid');
+        var commentNickname = $(obj).data('commentnickname');
+        $("[name='content']").attr("placeholder", "@"+commentNickname).focus();
+        $("[name='parentComment.id']").val(commentId);
+        $(window).scrollTo($('#comment-form'),500);
+    }
+
+</script>
+</body>
+</html>
