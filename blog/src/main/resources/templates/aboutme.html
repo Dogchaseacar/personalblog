@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name ="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
@@ -9,7 +9,7 @@
 </head>
 <body>
     <!--navi part-->
-    <nav class="ui attached inverted segment m-padded-tb-mini m-shadow-small">
+    <nav th:replace="_fragments :: menu(3)" class="ui attached inverted segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted stackable menu">
                 <h2 class="ui teal header item">Blog</h2>
@@ -32,18 +32,19 @@
     <!--page content-->
     <div class="m-container-small m-padded-tb-mid">
         <div class="ui container">
-            <div class="ui grid">
-                <div class="ui top attached segment">
-                    <div class="ui header">Wdy</div>
+
+                <div class="ui center aligned container div1">
+                    <div >
+                        <img class="ui centered rounded" src="../static/images/gakki.jpg" th:src="@{/images/gakki.jpg}" width="567" height="756"/>
+                    </div>
+                    <p class="ui centered lead2" >Not a schemer, just do things.</p>
                 </div>
-                <div class="ui attached segment">
-                    <p class="m-text">热爱技术，热爱历史，热爱艺术</p>
-                </div>
-            </div>
+
+
         </div>
     </div>
     <!--page footer-->
-    <footer class="ui inverted vertical segment m-padded-tb-big">
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-big">
         <div class="ui center aligned container">
             <div class="ui inverted divided stackable grid">
                 <div class="five wide column">

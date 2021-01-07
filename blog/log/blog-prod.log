@@ -1,0 +1,28 @@
+2021-01-04 22:03:56.561  INFO 17420 --- [restartedMain] com.wdy.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-19HMM1HF with PID 17420 (D:\Idealproject\blog\target\classes started by Lenovo in D:\Idealproject\blog)
+2021-01-04 22:03:56.563 DEBUG 17420 --- [restartedMain] com.wdy.blog.BlogApplication             : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-04 22:03:56.563  INFO 17420 --- [restartedMain] com.wdy.blog.BlogApplication             : The following profiles are active: prod
+2021-01-04 22:03:56.597  INFO 17420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-04 22:03:56.609  INFO 17420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-04 22:03:57.075  INFO 17420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-04 22:03:57.127  INFO 17420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2021-01-04 22:03:57.663  INFO 17420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-04 22:03:57.669  INFO 17420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-04 22:03:57.669  INFO 17420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-04 22:03:57.723  INFO 17420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-04 22:03:57.723  INFO 17420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1113 ms
+2021-01-04 22:03:57.825  INFO 17420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-04 22:03:57.858  INFO 17420 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-04 22:03:57.894  INFO 17420 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-04 22:03:57.974  WARN 17420 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-04 22:03:57.993  INFO 17420 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-04 22:03:58.061  INFO 17420 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-04 22:03:58.196  INFO 17420 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-04 22:03:58.428  INFO 17420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-04 22:03:58.457  INFO 17420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-04 22:03:58.458  INFO 17420 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-04 22:03:58.810  INFO 17420 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-04 22:03:58.823  INFO 17420 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-04 22:04:01.299  INFO 17420 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-04 22:04:01.321  INFO 17420 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-04 22:04:01.798  INFO 17420 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-04 22:04:01.806  INFO 17420 --- [restartedMain] com.wdy.blog.BlogApplication             : Started BlogApplication in 5.631 seconds (JVM running for 6.395)

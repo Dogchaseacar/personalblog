@@ -7,5 +7,11 @@
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/blog</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="aws" uuid="8d00abe6-e807-484f-a0e0-312eefe565f1">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://database-blog.c0iymujbsjzh.ap-northeast-1.rds.amazonaws.com:3306/blog</jdbc-url>
+    </data-source>
   </component>
 </project>

@@ -1,0 +1,9 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: prod
+  resources:
+    add-mappings: true
+
+comment.avatar: /images/fig.jpg

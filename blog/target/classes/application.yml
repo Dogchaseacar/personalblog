@@ -6,4 +6,4 @@ spring:
   resources:
     add-mappings: true
 
-comment.avatar: /images/avatar.jpg
+comment.avatar: /images/fig.jpg

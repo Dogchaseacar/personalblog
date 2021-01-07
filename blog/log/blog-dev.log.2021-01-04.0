@@ -1,0 +1,233 @@
+2021-01-04 21:50:13.613  INFO 16932 --- [restartedMain] com.wdy.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-19HMM1HF with PID 16932 (D:\Idealproject\blog\target\classes started by Lenovo in D:\Idealproject\blog)
+2021-01-04 21:50:13.618 DEBUG 16932 --- [restartedMain] com.wdy.blog.BlogApplication             : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-04 21:50:13.618  INFO 16932 --- [restartedMain] com.wdy.blog.BlogApplication             : The following profiles are active: dev
+2021-01-04 21:50:13.653  INFO 16932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-04 21:50:13.654  INFO 16932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-04 21:50:14.147  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-04 21:50:14.197  INFO 16932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2021-01-04 21:50:14.728  INFO 16932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-04 21:50:14.736  INFO 16932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-04 21:50:14.737  INFO 16932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-04 21:50:14.797  INFO 16932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-04 21:50:14.797  INFO 16932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1142 ms
+2021-01-04 21:50:14.920  INFO 16932 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-04 21:50:14.953  INFO 16932 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-04 21:50:14.987  INFO 16932 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-04 21:50:15.066  WARN 16932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-04 21:50:15.085  INFO 16932 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-04 21:50:15.176  INFO 16932 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-04 21:50:15.283  INFO 16932 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-04 21:50:15.298  INFO 16932 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-04 21:50:15.313  INFO 16932 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-04 21:50:15.555  INFO 16932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-04 21:50:15.583  INFO 16932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-04 21:50:15.585  INFO 16932 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-04 21:50:15.831  INFO 16932 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-04 21:50:15.837  INFO 16932 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-04 21:50:16.315  INFO 16932 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-04 21:50:16.332  INFO 16932 --- [restartedMain] com.wdy.blog.BlogApplication             : Started BlogApplication in 3.063 seconds (JVM running for 3.801)
+2021-01-04 21:52:14.165  INFO 16932 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-04 21:52:14.166  INFO 16932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-04 21:52:14.166  INFO 16932 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-04 21:52:14.195  INFO 16932 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-01-04 21:52:14.263  WARN 16932 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-04 21:52:14.279  INFO 16932 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Result : index
+2021-01-04 21:52:20.448  INFO 16932 --- [http-nio-8080-exec-7] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/aboutme', ip='127.0.0.1', classMethod='com.wdy.blog.web.AboutShowController.about', args=[]}
+2021-01-04 21:52:20.451  INFO 16932 --- [http-nio-8080-exec-7] com.wdy.blog.aspect.LogAspect            : Result : aboutme
+2021-01-04 21:52:26.006  INFO 16932 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-01-04 21:52:26.013  INFO 16932 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Result : index
+2021-01-04 21:54:48.079  INFO 7436 --- [restartedMain] com.wdy.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-19HMM1HF with PID 7436 (D:\Idealproject\blog\target\classes started by Lenovo in D:\Idealproject\blog)
+2021-01-04 21:54:48.081 DEBUG 7436 --- [restartedMain] com.wdy.blog.BlogApplication             : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-04 21:54:48.082  INFO 7436 --- [restartedMain] com.wdy.blog.BlogApplication             : The following profiles are active: dev
+2021-01-04 21:54:48.116  INFO 7436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-04 21:54:48.116  INFO 7436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-04 21:54:48.581  INFO 7436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-04 21:54:48.620  INFO 7436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2021-01-04 21:54:49.168  INFO 7436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-04 21:54:49.174  INFO 7436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-04 21:54:49.174  INFO 7436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-04 21:54:49.233  INFO 7436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-04 21:54:49.234  INFO 7436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1117 ms
+2021-01-04 21:54:49.334  INFO 7436 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-04 21:54:49.366  INFO 7436 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-04 21:54:49.402  INFO 7436 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-04 21:54:49.484  WARN 7436 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-04 21:54:49.501  INFO 7436 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-04 21:54:49.568  INFO 7436 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-04 21:54:49.666  INFO 7436 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-04 21:54:49.681  INFO 7436 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-04 21:54:49.708  INFO 7436 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-04 21:54:49.946  INFO 7436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-04 21:54:49.975  INFO 7436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-04 21:54:49.976  INFO 7436 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-04 21:54:50.201  INFO 7436 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-04 21:54:50.207  INFO 7436 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-04 21:54:50.677  INFO 7436 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-04 21:54:50.683  INFO 7436 --- [restartedMain] com.wdy.blog.BlogApplication             : Started BlogApplication in 2.952 seconds (JVM running for 3.72)
+2021-01-04 22:21:13.299  INFO 28588 --- [restartedMain] com.wdy.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-19HMM1HF with PID 28588 (D:\Idealproject\blog\target\classes started by Lenovo in D:\Idealproject\blog)
+2021-01-04 22:21:13.301 DEBUG 28588 --- [restartedMain] com.wdy.blog.BlogApplication             : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-04 22:21:13.301  INFO 28588 --- [restartedMain] com.wdy.blog.BlogApplication             : The following profiles are active: dev
+2021-01-04 22:21:13.333  INFO 28588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-04 22:21:13.333  INFO 28588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-04 22:21:13.795  INFO 28588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-04 22:21:13.846  INFO 28588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2021-01-04 22:21:14.395  INFO 28588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-04 22:21:14.402  INFO 28588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-04 22:21:14.402  INFO 28588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-04 22:21:14.463  INFO 28588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-04 22:21:14.463  INFO 28588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1129 ms
+2021-01-04 22:21:14.564  INFO 28588 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-04 22:21:14.598  INFO 28588 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-04 22:21:14.634  INFO 28588 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-04 22:21:14.711  WARN 28588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-04 22:21:14.728  INFO 28588 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-04 22:21:14.799  INFO 28588 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-04 22:21:14.898  INFO 28588 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-04 22:21:14.913  INFO 28588 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-04 22:21:14.938  INFO 28588 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-04 22:21:15.177  INFO 28588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-04 22:21:15.206  INFO 28588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-04 22:21:15.208  INFO 28588 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-04 22:21:15.435  INFO 28588 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-04 22:21:15.441  INFO 28588 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-04 22:21:15.922  INFO 28588 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-04 22:21:15.928  INFO 28588 --- [restartedMain] com.wdy.blog.BlogApplication             : Started BlogApplication in 2.969 seconds (JVM running for 3.8)
+2021-01-04 22:21:21.846  INFO 28588 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-04 22:21:21.846  INFO 28588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-04 22:21:21.847  INFO 28588 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-01-04 22:21:21.873  INFO 28588 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-01-04 22:21:21.933  WARN 28588 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-04 22:21:21.946  INFO 28588 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Result : index
+2021-01-04 22:26:06.626  INFO 28588 --- [http-nio-8080-exec-7] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:26:06.684  INFO 28588 --- [http-nio-8080-exec-7] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:26:06.816  INFO 28588 --- [http-nio-8080-exec-3] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:26:06.854  INFO 28588 --- [http-nio-8080-exec-3] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:26:11.150  INFO 28588 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.post', args=[Comment{id=null, nickname='Wdy', email='wdy75934@outlook.com', avatar='null', content='s', createTime=null, blog=Blog{id=22, title='null', content='null', firstPicture='null', flag='null', views=null, commentabled=false, published=false, createTime=null, updateTime=null, type=null, user=null, comments=[], description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', avatar='null', content='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@43c3419a]}
+2021-01-04 22:26:11.184  INFO 28588 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Result : redirect:/comments/22
+2021-01-04 22:26:11.197  INFO 28588 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:26:11.212  INFO 28588 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:26:17.973  INFO 28588 --- [http-nio-8080-exec-4] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.post', args=[Comment{id=null, nickname='Wdy', email='aszlkm1012@gmail.com', avatar='null', content='s', createTime=null, blog=Blog{id=22, title='null', content='null', firstPicture='null', flag='null', views=null, commentabled=false, published=false, createTime=null, updateTime=null, type=null, user=null, comments=[], description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', avatar='null', content='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@43c3419a]}
+2021-01-04 22:26:17.994  INFO 28588 --- [http-nio-8080-exec-4] com.wdy.blog.aspect.LogAspect            : Result : redirect:/comments/22
+2021-01-04 22:26:17.998  INFO 28588 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:26:18.009  INFO 28588 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:26:22.340  INFO 28588 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.post', args=[Comment{id=null, nickname='asz', email='aszlkm1012@gmail.com', avatar='null', content='s', createTime=null, blog=Blog{id=22, title='null', content='null', firstPicture='null', flag='null', views=null, commentabled=false, published=false, createTime=null, updateTime=null, type=null, user=null, comments=[], description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', avatar='null', content='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@43c3419a]}
+2021-01-04 22:26:22.360  INFO 28588 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Result : redirect:/comments/22
+2021-01-04 22:26:22.365  INFO 28588 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:26:22.376  INFO 28588 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:27:20.486  INFO 28588 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.post', args=[Comment{id=null, nickname='asz', email='aszlk012@gmail.com', avatar='null', content='k', createTime=null, blog=Blog{id=22, title='null', content='null', firstPicture='null', flag='null', views=null, commentabled=false, published=false, createTime=null, updateTime=null, type=null, user=null, comments=[], description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', avatar='null', content='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@43c3419a]}
+2021-01-04 22:27:20.494  INFO 28588 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Result : redirect:/comments/22
+2021-01-04 22:27:20.500  INFO 28588 --- [http-nio-8080-exec-10] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:27:20.511  INFO 28588 --- [http-nio-8080-exec-10] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:35:02.778  INFO 28588 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.post', args=[Comment{id=null, nickname='asz', email='u692221k@ecs.osaka-u.ac.jp', avatar='null', content='s', createTime=null, blog=Blog{id=22, title='null', content='null', firstPicture='null', flag='null', views=null, commentabled=false, published=false, createTime=null, updateTime=null, type=null, user=null, comments=[], description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', avatar='null', content='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@43c3419a]}
+2021-01-04 22:35:02.799  INFO 28588 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Result : redirect:/comments/22
+2021-01-04 22:35:02.804  INFO 28588 --- [http-nio-8080-exec-10] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:35:02.816  INFO 28588 --- [http-nio-8080-exec-10] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:37:25.909  INFO 28588 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:37:25.926  INFO 28588 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:37:26.057  INFO 28588 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:37:26.073  INFO 28588 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:37:38.448  INFO 28588 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:37:38.472  INFO 28588 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:37:38.589  INFO 28588 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:37:38.604  INFO 28588 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:37:54.034  INFO 28588 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:37:54.054  INFO 28588 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:37:54.186  INFO 28588 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:37:54.203  INFO 28588 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:38:53.032  INFO 28588 --- [http-nio-8080-exec-2] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:38:53.050  INFO 28588 --- [http-nio-8080-exec-2] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:38:53.178  INFO 28588 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:38:53.195  INFO 28588 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:39:56.497  INFO 22500 --- [restartedMain] com.wdy.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-19HMM1HF with PID 22500 (D:\Idealproject\blog\target\classes started by Lenovo in D:\Idealproject\blog)
+2021-01-04 22:39:56.499 DEBUG 22500 --- [restartedMain] com.wdy.blog.BlogApplication             : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-04 22:39:56.499  INFO 22500 --- [restartedMain] com.wdy.blog.BlogApplication             : The following profiles are active: dev
+2021-01-04 22:39:56.535  INFO 22500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-04 22:39:56.535  INFO 22500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-04 22:39:57.018  INFO 22500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-04 22:39:57.069  INFO 22500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2021-01-04 22:39:57.612  INFO 22500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-04 22:39:57.618  INFO 22500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-04 22:39:57.619  INFO 22500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-04 22:39:57.679  INFO 22500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-04 22:39:57.680  INFO 22500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1144 ms
+2021-01-04 22:39:57.796  INFO 22500 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-04 22:39:57.829  INFO 22500 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-04 22:39:57.862  INFO 22500 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-04 22:39:57.937  WARN 22500 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-04 22:39:57.955  INFO 22500 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-04 22:39:58.024  INFO 22500 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-04 22:39:58.121  INFO 22500 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-04 22:39:58.136  INFO 22500 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-04 22:39:58.164  INFO 22500 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-04 22:39:58.400  INFO 22500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-04 22:39:58.430  INFO 22500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-04 22:39:58.432  INFO 22500 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-04 22:39:58.668  INFO 22500 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-04 22:39:58.674  INFO 22500 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-04 22:39:59.145  INFO 22500 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-04 22:39:59.151  INFO 22500 --- [restartedMain] com.wdy.blog.BlogApplication             : Started BlogApplication in 3.006 seconds (JVM running for 3.786)
+2021-01-04 22:40:07.024  INFO 22500 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-04 22:40:07.024  INFO 22500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-04 22:40:07.025  INFO 22500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-04 22:40:07.049  INFO 22500 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:40:07.148  INFO 22500 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:40:07.535  INFO 22500 --- [http-nio-8080-exec-7] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:40:07.581  INFO 22500 --- [http-nio-8080-exec-7] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:40:14.867  INFO 22500 --- [http-nio-8080-exec-3] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-01-04 22:40:14.883  WARN 22500 --- [http-nio-8080-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-04 22:40:14.886  INFO 22500 --- [http-nio-8080-exec-3] com.wdy.blog.aspect.LogAspect            : Result : index
+2021-01-04 22:40:23.765  INFO 22500 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:40:23.782  INFO 22500 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:40:23.912  INFO 22500 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:40:23.939  INFO 22500 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:40:27.156  INFO 22500 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:40:27.168  INFO 22500 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:40:27.282  INFO 22500 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:40:27.303  INFO 22500 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:40:58.968  INFO 22500 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:40:58.980  INFO 22500 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:40:59.110  INFO 22500 --- [http-nio-8080-exec-2] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:40:59.128  INFO 22500 --- [http-nio-8080-exec-2] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:43:54.150  INFO 21908 --- [restartedMain] com.wdy.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_271 on LAPTOP-19HMM1HF with PID 21908 (D:\Idealproject\blog\target\classes started by Lenovo in D:\Idealproject\blog)
+2021-01-04 22:43:54.151 DEBUG 21908 --- [restartedMain] com.wdy.blog.BlogApplication             : Running with Spring Boot v2.4.0, Spring v5.3.1
+2021-01-04 22:43:54.152  INFO 21908 --- [restartedMain] com.wdy.blog.BlogApplication             : The following profiles are active: dev
+2021-01-04 22:43:54.185  INFO 21908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-04 22:43:54.186  INFO 21908 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-04 22:43:54.656  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2021-01-04 22:43:54.707  INFO 21908 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2021-01-04 22:43:55.247  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-04 22:43:55.253  INFO 21908 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-04 22:43:55.254  INFO 21908 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2021-01-04 22:43:55.313  INFO 21908 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-04 22:43:55.313  INFO 21908 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1127 ms
+2021-01-04 22:43:55.412  INFO 21908 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-04 22:43:55.444  INFO 21908 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-04 22:43:55.481  INFO 21908 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+2021-01-04 22:43:55.558  WARN 21908 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-01-04 22:43:55.578  INFO 21908 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-01-04 22:43:55.649  INFO 21908 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-01-04 22:43:55.747  INFO 21908 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-01-04 22:43:55.761  INFO 21908 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-01-04 22:43:55.785  INFO 21908 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-01-04 22:43:56.024  INFO 21908 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-04 22:43:56.055  INFO 21908 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-04 22:43:56.056  INFO 21908 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2021-01-04 22:43:56.285  INFO 21908 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-04 22:43:56.291  INFO 21908 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-04 22:43:56.792  INFO 21908 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2021-01-04 22:43:56.798  INFO 21908 --- [restartedMain] com.wdy.blog.BlogApplication             : Started BlogApplication in 2.997 seconds (JVM running for 3.784)
+2021-01-04 22:44:30.852  INFO 21908 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-04 22:44:30.852  INFO 21908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-04 22:44:30.853  INFO 21908 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-01-04 22:44:30.878  INFO 21908 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:44:30.990  INFO 21908 --- [http-nio-8080-exec-1] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:44:31.407  INFO 21908 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:44:31.455  INFO 21908 --- [http-nio-8080-exec-5] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:44:47.362  INFO 21908 --- [http-nio-8080-exec-3] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/blog/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.IndexController.blog', args=[22, {}]}
+2021-01-04 22:44:47.383  INFO 21908 --- [http-nio-8080-exec-3] com.wdy.blog.aspect.LogAspect            : Result : blog
+2021-01-04 22:44:47.516  INFO 21908 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:44:47.544  INFO 21908 --- [http-nio-8080-exec-8] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-01-04 22:44:53.011  INFO 21908 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.post', args=[Comment{id=null, nickname='Wdy', email='wdy75934@outlook.com', avatar='null', content='NIce', createTime=null, blog=Blog{id=22, title='null', content='null', firstPicture='null', flag='null', views=null, commentabled=false, published=false, createTime=null, updateTime=null, type=null, user=null, comments=[], description='null'}, replyComments=[], parentComment=Comment{id=43, nickname='null', email='null', avatar='null', content='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@2d29fd82]}
+2021-01-04 22:44:53.049  INFO 21908 --- [http-nio-8080-exec-9] com.wdy.blog.aspect.LogAspect            : Result : redirect:/comments/22
+2021-01-04 22:44:53.063  INFO 21908 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Request:RequestLog{url='http://127.0.0.1:8080/comments/22', ip='127.0.0.1', classMethod='com.wdy.blog.web.CommentController.comments', args=[22, {}]}
+2021-01-04 22:44:53.077  INFO 21908 --- [http-nio-8080-exec-6] com.wdy.blog.aspect.LogAspect            : Result : blog :: commentList
